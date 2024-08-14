@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: gm.rh.RhApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.354 s <<< FAILURE! - in gm.rh.RhApplicationTests
+gm.rh.RhApplicationTests  Time elapsed: 0.352 s  <<< ERROR!
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\FullStack-Aplication-Dockerized\backend-rh\target\test-classes\gm\rh\RhApplicationTests.class]
+Caused by: java.io.IOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [C:\FullStack-Aplication-Dockerized\backend-rh\target\test-classes\gm\rh\RhApplicationTests.class]
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 66
+

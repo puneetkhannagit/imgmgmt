@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  # App (React - Frontend)
+  reac:
+    container_name: webapp
+    build:
+      context: ./UI
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      - springboot
+
+  # App (Springboot - Backend)
+  springboot:
+    container_name: springboot
+    build:
+      context: ./cms
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - C:/dbtune-drive:/content
+    environment:
+      - DATABASE_URL=jdbc:postgresql://postgres_db:5432/tryapi
+      - DATABASE_USERNAME=postgres
+      - DATABASE_PASSWORD=123456
+    depends_on:
+      - postgres_db
+
+  # App (Postgres - Database)
+  postgres_db:
+    container_name: postgres_db
+    image: postgres:12
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: tryapi
