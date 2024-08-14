@@ -27,11 +27,11 @@ Keep the containers mount name as content as the code goes there , also it could
   
 11.	Now try to visit http://localhost:3000/list , you will have paginated GRID and TABLE VIEW.
 
-11.1 GRID allows you to download the resized image (paginated set) with other image attributes like name 
+  11.1 GRID allows you to download the resized image (paginated set) with other image attributes like name 
 
-11.2 TABLE allows you to download the thumbnails of the paginated set with other attributes 
+  11.2 TABLE allows you to download the thumbnails of the paginated set with other attributes 
 
-11.2.1 Once you click on the thumbnail the server issues the complete resized file .
+   11.2.1 Once you click on the thumbnail the server issues the complete resized file .
 
 
 
