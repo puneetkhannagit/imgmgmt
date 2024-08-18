@@ -24,7 +24,7 @@
    
    ```yaml
    volumes:
-     - C:/dbtune-drive:/content
+     - YOUR HOST FILE SYSTEM DIR :/content
    ```
 
    Then start the services:
