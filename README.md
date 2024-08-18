@@ -5,7 +5,7 @@
 1. **Clone the Repository**
 
    ```bash
-   git clone <repository-url>
+   git clone <this repo>
    ```
 
 2. **Ensure Docker is Running**
